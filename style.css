@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Martel:200,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Martel:200,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 :root {
-    --main-gray: #2a2a2a;
-    --main-green: #009f81;
-    --main-white: #f7f7f7;
-    --main-blue: #006d9f;
+    --main-white: #ffffff;
+    --pale-gold: #c0b283;
+    --silk: #dcd0c0;
+    --main-paper: #f4f4f4;
+    --charcoal: #373737;
 }
 
 * {
@@ -24,17 +26,58 @@ html {
 }
 
 body {
-    font-family: 'Martel', serif;
-    font-weight: 200;
-    font-size: 1.8rem;
-    line-height: 1.4;
-    color: var(--main-white);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    color: var(--pale-gold);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--pale-gold);
 }
 
 h1 {
     font-family: 'Martel', serif;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 6rem;
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: var(--main-white);
+}
+
+.nav > i {
+    display: flex;
+    color: var(--pale-gold);
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    width: 100%;
+}
+
+#icon {
+    position: absolute;
+    left: 0;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 1.4rem;
+    padding: 1.3rem;
 }
 
 .welcome-section {
@@ -44,18 +87,10 @@ h1 {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: var(--main-gray);
-    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    background-color: var(--main-paper);
 }
 
 .welcome-section > p {
     font-size: 2rem;
     font-weight: 200;
-}
-
-#tbd-tag {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 10px;
-    font-size: 1rem;
 }
